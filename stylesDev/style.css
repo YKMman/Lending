@@ -1,0 +1,41 @@
+@import url('../stylesDev/variables.css');
+@import url('../stylesDev/bem.css');
+@import url('../stylesDev/icons.css');
+@import url('../sprite/sprite.svg');
+@import url('../stylesDev/reset.css');
+
+body{
+    line-height: var(--line20);
+    font-size: var(--fs14);
+    font-weight: var(--fw400);
+    font-style: normal;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+html, 
+body{
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.wrapper .main{
+    flex: 1 1 auto;
+}
+
+.wrapper .footer{
+    flex: 0 0 auto;
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}

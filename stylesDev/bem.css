@@ -1,0 +1,90 @@
+.title--h1{
+    font-weight: var(--fw700);
+    font-size: var(--fs64);
+    line-height: var(--line83);
+    color: var(--color_marengo);
+}
+
+.title--h2{
+    font-size: var(--fs38);
+    line-height: var(--line49);
+    letter-spacing: var(--space-003);
+    color: var(--color_marengo);
+}
+
+.btn{
+    cursor: pointer;
+    max-width: 199px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    transition: 0.35s ease;
+    color: var(--color_white);
+    background: var(--color_blue);
+}
+
+.btn:hover{
+    color: var(--color_dark_blue);
+}
+
+.btn:active{
+    background-color: var(--color_white);
+} 
+
+
+.advantages_list{
+    margin-bottom: 115px;
+    display: grid;
+    column-gap: 20px;
+    transform: translate(0, 10000px);
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+
+.advantages_item{
+    padding: 22px 20px 30px;
+    display: flex;
+    border-radius: 20px;
+    column-gap: 5px;
+    justify-content: space-between;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 20%);
+    background: var(--color_white);
+}
+
+.advantages_text{
+    max-width: 150px;
+    font-size: var(--fs16);
+    font-weight: var(--fw500);
+    color: var(--marengo);
+    line-height: var(--line22);
+}
+
+.advantages_item:nth-child(3) .advantages_text{
+    max-width: min-content;
+}
+
+.advantages_icon{
+    position: relative;
+    z-index: 1;
+}
+
+.advantages_icon::after{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -8px;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    z-index: -1;
+    background: var(--bg_white);
+}
+
+.close{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open{
+    opacity: 1;
+    visibility: visible;
+}
